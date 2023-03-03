@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "240546208843",
+    "project_id": "raidereats-app",
+    "storage_bucket": "raidereats-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240546208843:android:0226a8e3b85926b6ec81ce",
+        "android_client_info": {
+          "package_name": "com.capstoneproject.raidereats"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240546208843-3a0atj4vur0pttiems11ote4irngvm2j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT9u0HbOhR5aORPvOLo9WJGYFW_tI1NrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240546208843-3a0atj4vur0pttiems11ote4irngvm2j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
