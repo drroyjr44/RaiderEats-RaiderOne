@@ -1,5 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:foodpanda_sellers_app/global/global.dart';
+import 'package:foodpanda_sellers_app/mainScreens/home_screen.dart';
 import '../authentication/auth_screen.dart';
 
 
@@ -15,8 +17,20 @@ class _MySplashScreenState extends State<MySplashScreen>
 
   startTimer()
   {
+
+
     Timer(const Duration(seconds: 8),() async{
-      Navigator.push(context, MaterialPageRoute(builder: (c)=> const AuthScreen()));
+      // if seller is logged in already
+      if(firebaseAuth.currentUser != null){
+
+        Navigator.push(context, MaterialPageRoute(builder: (c)=> const HomeScreen()));
+
+      }
+      // if seller is logged is not logged in already
+      else{
+        Navigator.push(context, MaterialPageRoute(builder: (c)=> const AuthScreen()));
+
+      }
     });
   }
 
